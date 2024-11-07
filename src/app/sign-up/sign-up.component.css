@@ -1,0 +1,55 @@
+.container {
+    max-width: 500px; /* Limit the width for better layout */
+}
+
+h1 {
+    color: #007bff; /* Optional: Change header color */
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.navbar {
+    padding: 5px 15px; /* Adjust the top and bottom padding */
+}
+
+.navbar-header {
+    float: left; /* Keep the brand on the left */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Arrange items in a row */
+    margin-left: auto; /* Push nav items to the right */
+}
+
+.navbar-nav li {
+    margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav a {
+    color: white; /* Change the text color to white */
+    padding: 10px; /* Adjust padding for clickable area */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-form {
+    margin-left: 20px; /* Space between the search form and the navbar links */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust brand font size if needed */
+}
+
+  
+  

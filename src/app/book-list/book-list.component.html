@@ -1,0 +1,70 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BookStore</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Menu</a></li>
+      <li><a href="#">New Books</a></li>
+      <li><a href="#">Old Books</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          Pages <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+<div class="container mt-4">
+  <header class="mb-3">
+    <h1 class="text-center bold-text">Book List</h1>
+    <div class="text-right">
+      <button class="btn btn-primary" (click)="navigateToAddBook()">Add Book</button>
+    </div>
+  </header>
+
+
+
+
+  <div class="book-list">
+    <ng-container *ngIf="books.length > 0; else noBooks">
+      <div class="book-item card mb-3" *ngFor="let book of books">
+        <div class="card-body">
+          <h2 class="card-title">{{ book.bookName }}</h2>
+          <p class="card-text">
+            <strong>Price:</strong> {{ book.price !== null ? '₹' + (book.price * 1 | number:'1.2-2') : 'Price not available' }}
+          </p>
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-info" (click)="navigateToViewBook(book.id)">View Book</button>
+            <button class="btn btn-primary" (click)="navigateToUpdateBook(book.id)">Update</button>
+            <button class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #noBooks>
+      <p class="text-center">No books available.</p>
+    </ng-template>
+  </div>
+
+  <footer class="text-center mt-4">
+    <p>&copy; 2024 Java Fullstack Guru</p>
+  </footer>
+</div>

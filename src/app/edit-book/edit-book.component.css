@@ -1,0 +1,92 @@
+.container {
+  max-width: 500px; /* Limit the maximum width for better readability */
+  margin: auto; /* Center the container */
+}
+
+.header {
+  background-color: #f8f9fa; /* Light background for the header */
+  padding: 10px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.edit-book-form {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+.form-control {
+  border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.btn-block {
+  width: 100%; /* Full width buttons */
+}
+
+.footer {
+  font-size: 0.9rem; /* Smaller footer text */
+}
+
+.alert {
+  border-radius: 5px; /* Rounded corners for alerts */
+}
+
+/* .container {
+    padding: 0px;
+  }
+   */
+   header, footer {
+    background-color: red;
+    color: white;
+    padding: 5px; /* Add padding to create space */
+    text-align: center;
+  }
+  
+  header {
+    border-bottom: 0px solid white; /* Add border to create space */
+  }
+  
+  footer {
+    border-top: 20px solid white; /* Add border to create space */
+  }
+
+  .navbar {
+    padding: 5px 15px; /* Adjust the top and bottom padding */
+}
+
+.navbar-header {
+    float: left; /* Keep the brand on the left */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Arrange items in a row */
+    margin-left: auto; /* Push nav items to the right */
+}
+
+.navbar-nav li {
+    margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav a {
+    color: white; /* Change the text color to white */
+    padding: 10px; /* Adjust padding for clickable area */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-form {
+    margin-left: 20px; /* Space between the search form and the navbar links */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust brand font size if needed */
+}
+
+  
+  

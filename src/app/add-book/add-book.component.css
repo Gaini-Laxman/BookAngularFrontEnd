@@ -1,0 +1,94 @@
+.container {
+  max-width: 500px; /* Limit the maximum width for better readability */
+  margin: auto; /* Center the container */
+}
+
+.header {
+  background-color: #f8f9fa; /* Light background for the header */
+  padding: 10px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.add-book-form {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.form-control {
+  border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.btn-block {
+  width: 100%; /* Full width buttons */
+}
+
+.footer {
+  font-size: 0.9rem; /* Smaller footer text */
+}
+
+.alert {
+  border-radius: 5px; /* Rounded corners for alerts */
+}
+
+
+.navbar {
+  padding: 5px 15px; /* Adjust the top and bottom padding */
+}
+
+.navbar-header {
+  float: left; /* Keep the brand on the left */
+}
+
+.navbar-nav {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-direction: row; /* Arrange items in a row */
+  margin-left: auto; /* Push nav items to the right */
+}
+
+.navbar-nav li {
+  margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav a {
+  color: white; /* Change the text color to white */
+  padding: 10px; /* Adjust padding for clickable area */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-form {
+  margin-left: 20px; /* Space between the search form and the navbar links */
+}
+
+.navbar-brand {
+  font-size: 24px; /* Adjust brand font size if needed */
+}
+
+
+html, body {
+height: 100%;
+margin: 0;
+}
+
+.container {
+min-height: calc(100vh - 56px); /* Adjust based on the height of your navbar */
+display: flex;
+flex-direction: column;
+}
+
+.footer {
+background-color: #f8f9fa; /* Optional: change the background color */
+position: relative; /* To maintain proper stacking context */
+width: 100%;
+bottom: 0;
+}
+
+.book-list {
+flex: 1; /* Allows the book list to grow and push the footer down */
+}
+
+.bold-text {
+font-weight: bold;
+}

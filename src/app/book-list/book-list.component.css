@@ -1,0 +1,87 @@
+/* .container {
+    padding: 0px;
+  }
+   */
+  header {
+    background-color: white;
+    color: block;
+    padding: 5px; /* Add padding to create space */
+    text-align: center;
+  }
+
+  footer {
+    background-color: red;
+    color: white;
+    padding: 5px; /* Add padding to create space */
+    text-align: center;
+  }
+  
+  header {
+    border-bottom: 0px solid white; /* Add border to create space */
+  }
+  
+  footer {
+    border-top: 20px solid white; /* Add border to create space */
+  }
+
+  .navbar {
+    padding: 5px 15px; /* Adjust the top and bottom padding */
+}
+
+.navbar-header {
+    float: left; /* Keep the brand on the left */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Arrange items in a row */
+    margin-left: auto; /* Push nav items to the right */
+}
+
+.navbar-nav li {
+    margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav a {
+    color: white; /* Change the text color to white */
+    padding: 10px; /* Adjust padding for clickable area */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-form {
+    margin-left: 20px; /* Space between the search form and the navbar links */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust brand font size if needed */
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: calc(100vh - 56px); /* Adjust based on the height of your navbar */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #f8f9fa; /* Optional: change the background color */
+  position: relative; /* To maintain proper stacking context */
+  width: 100%;
+  bottom: 0;
+}
+
+.book-list {
+  flex: 1; /* Allows the book list to grow and push the footer down */
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+  
+  
