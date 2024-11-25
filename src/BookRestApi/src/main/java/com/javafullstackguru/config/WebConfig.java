@@ -14,8 +14,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Adjust the path as needed
-                .allowedOrigins("http://localhost:4200") // Your Angular app URL
+                .allowedOrigins("https://book-angular-front-end-ddn6.vercel.app") // Your Angular app URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+                .allowedHeaders("*") 
+                .allowCredentials(true);
     }
 }
 
