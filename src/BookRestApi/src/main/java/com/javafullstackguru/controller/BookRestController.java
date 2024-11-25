@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = "https://book-angular-front-end-ddn6.vercel.app")
 @RestController
 @RequestMapping("/api/")
 public class BookRestController {
